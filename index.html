@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Keeper🏏🏏</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        let scoreA = 0;
+        let scoreB = 0;
+
+        function incscoreA() {
+            scoreA++;
+            document.getElementById("scoreA").innerHTML = scoreA;
+        }
+
+        function incscoreB() {
+            scoreB++;
+            document.getElementById("scoreB").innerHTML = scoreB;
+        }
+
+        function decscoreA() {
+            scoreA--;
+            document.getElementById("scoreA").innerHTML = scoreA;
+        }
+
+        function decscoreB() {
+            scoreB--;
+            document.getElementById("scoreB").innerHTML = scoreB;
+        }
+        function reset() {
+            scoreA = 0;
+            scoreB = 0;
+            document.getElementById("scoreA").innerHTML = scoreA;
+            document.getElementById("scoreB").innerHTML = scoreB;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="app-title-container">
+
+        <h1 class="app-title"> Cricket Score Keeper🏏🏏</h1>
+    </div>
+
+    <div class="team-card-container">
+
+
+        <div class="team-card">
+            <h3 class="team-card-title" style="color:whitesmoke; ">Team A</h3>
+            <img src="./img/australian-flag.gif " height="200px" width="300px">
+            <p class="team-score-card" id="scoreA"> 0</p>
+
+            <div class="score-card-button-container">
+
+                <span class="score-card-button" onclick="incscoreA()">+</span>
+                <span class="score-card-button" onclick="decscoreA()">-</span>
+
+            </div>
+        </div>
+        <div class="team-card">
+            <h3 class="team-card-title" style="color: whitesmoke;">Team B</h3>
+            <img src="./img/Flag_of_India.gif " height="200px" width="300px">
+            <p class="team-score-card" id="scoreB">0</p>
+
+            <div class="score-card-button-container">
+                <span class="score-card-button" onclick="incscoreB()">+</span>
+                <span class="score-card-button" onclick="decscoreB()">-</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="reset-button-container">
+        <button class="btn-reset" onclick="reset()"> Reset</button>
+    </div>
+
+</body>
+
+</html>
