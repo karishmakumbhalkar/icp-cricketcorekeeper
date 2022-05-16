@@ -1,6 +1,6 @@
 body {
-    background-image: url(ck.webp);
-    background-repeat: 100% 100%; 
+    background-image: url(img.jpg);
+    background-repeat: no-repeat; 
     background-size: cover;
     height: 100vh;
 
