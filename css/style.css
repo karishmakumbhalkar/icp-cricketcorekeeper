@@ -37,6 +37,13 @@ body {
     text-align: center;
     font-size: 60px;
     margin-top: 30px;
+    background-color: skyblue;
+    border-radius: 70px;
+    width: auto;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #8597db 50%, #f09f9f 100%);
+
+
 }
 
 .score-card-button-container {
