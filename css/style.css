@@ -1,9 +1,5 @@
 body {
-    background-image: url(img.jpg);
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 100vh;
-
+    background-color: #FFFB7D;
 }
 
 .app-title-container {
